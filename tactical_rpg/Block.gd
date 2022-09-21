@@ -10,6 +10,7 @@ func contains_position(pos):
 func is_hovered():
 	return contains_position(get_global_mouse_position())
 
+
 func _process(delta):
 	if is_hovered() and Input.is_action_pressed("ui_select"):
 		selected = not selected
