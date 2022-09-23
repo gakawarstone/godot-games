@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Block_hover.png-a77f9399f681f8b5bc3fe9bf4113a8ed.stex"
+path="res://.import/BlockAvailable.png-92ec5a5dad1f9a99f9f2f5a4206a5596.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Block_hover.png"
-dest_files=[ "res://.import/Block_hover.png-a77f9399f681f8b5bc3fe9bf4113a8ed.stex" ]
+source_file="res://assets/BlockAvailable.png"
+dest_files=[ "res://.import/BlockAvailable.png-92ec5a5dad1f9a99f9f2f5a4206a5596.stex" ]
 
 [params]
 

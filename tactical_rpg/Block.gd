@@ -1,6 +1,7 @@
 extends Node2D
 
 var selected = false
+var available = false
 var hovered = false
 
 func contains_position(pos):
@@ -20,4 +21,5 @@ func _process(delta):
 		selected = toogle_select()	
 	
 	$BlockHover.visible = selected or is_hovered()
+	$BlockAvailable.visible = available
 	

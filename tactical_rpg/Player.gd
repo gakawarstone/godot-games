@@ -4,6 +4,7 @@ extends KinematicBody2D
 var selected = false
 var block_under
 var block_goto
+var available_distance = 100
 var speed = 5
 var stage = "None"
 
@@ -23,7 +24,7 @@ func _process(delta):
 
 func _physics_process(delta):
 	if stage == 'Move':
-		if (block_goto.get_node("Pivot").get_global_rect().get_center() - position).length() < 5 && block_goto.selected:
+		if (block_goto.get_node("Pivot").get_global_rect().get_center() - position).length() < 5:
 			block_under.selected = false
 			selected = false
 			stage = "None"
