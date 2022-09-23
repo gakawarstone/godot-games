@@ -13,7 +13,12 @@ func _process(delta):
 	for block in blocks:
 		if block.contains_position($Player.position):
 			$Player.block_under = block
-		if block.selected:
+		
+		if block.selected && $Player.selected && block != $Player.block_under:
+			$Player.block_under.selected = false
 			$Player.block_goto = block
+			$Player.stage = "Move"
+	
+	$Debug/Label.text = $Player.stage
 	
 

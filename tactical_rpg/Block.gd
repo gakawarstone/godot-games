@@ -10,10 +10,14 @@ func contains_position(pos):
 func is_hovered():
 	return contains_position(get_global_mouse_position())
 
+func toogle_select():
+	yield(get_tree().create_timer(1), "timeout")
+	return not selected
+
 
 func _process(delta):
 	if is_hovered() and Input.is_action_pressed("ui_select"):
-		selected = not selected
+		selected = toogle_select()	
 	
 	$BlockHover.visible = selected or is_hovered()
 	
