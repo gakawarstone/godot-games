@@ -4,7 +4,7 @@ extends KinematicBody2D
 var selected = false
 var block_under
 var block_goto
-var available_distance = 100
+var available_distance = 150
 var speed = 5
 var stage = "None"
 
